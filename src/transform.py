@@ -10,12 +10,12 @@ logging.basicConfig(level=logging.INFO)
 _FEATURES: List[Text] = ['sample']
 _LABEL: Text = 'label'
 
-SAMPLE_SHAPE: Tuple[int, int] = (15, 7)
+_SAMPLE_SHAPE: Tuple[int, int] = (15, 7)
 
 
 def parse_sample(sample: tf.Tensor) -> tf.Tensor:
     sample = tf.io.parse_tensor(sample, out_type=tf.float32)
-    sample = tf.reshape(sample, SAMPLE_SHAPE)
+    sample = tf.reshape(sample, _SAMPLE_SHAPE)
     return sample
 
 
