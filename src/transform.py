@@ -1,6 +1,6 @@
+import logging
 import tensorflow as tf
 import tensorflow_transform as tft
-import logging
 from typing import Dict, List, Text, Tuple
 
 

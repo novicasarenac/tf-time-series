@@ -1,13 +1,13 @@
 import argparse
+import logging
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
-import logging
 from typing import Text, Tuple, List
-from features_utils import (bytes_feature,
-                            float_feature,
-                            int64_feature)
+from features_utils import bytes_feature
+from features_utils import float_feature
+
 
 logging.basicConfig(level=logging.INFO)
 

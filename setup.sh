@@ -27,4 +27,5 @@ mkdir -p ~/airflow/dags
 mkdir -p ~/airflow/data
 cp src/pipeline.py ~/airflow/dags/
 cp src/transform.py ~/airflow/dags/
+cp src/trainer.py ~/airflow/dags/
 cp data/dataset.tfrecord ~/airflow/data/
