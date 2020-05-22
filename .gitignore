@@ -111,3 +111,4 @@ data/*
 !data/.gitkeep
 .DS_Store
 interactive_pipeline/*
+serving_model/*

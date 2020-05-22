@@ -9,7 +9,7 @@ airflow initdb
 
 printf "${GREEN}Downloading dataset${NORMAL}\n\n"
 wget https://archive.ics.uci.edu/ml/machine-learning-databases/00235/household_power_consumption.zip -P ./data
-tar -C data/ -xvf ./data/household_power_consumption.zip
+unzip data/household_power_consumption.zip -d data
 
 printf "${GREEN}Preprocessing dataset${NORMAL}\n\n"
 python src/preprocessing/data_preprocessing.py \

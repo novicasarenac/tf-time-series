@@ -9,7 +9,7 @@ _BATCH_SIZE: int = 32
 _LABEL: Text = 'label'
 _FEATURES: List[Text] = ['sample']
 _SAMPLE_SHAPE: Tuple[int, int] = (15, 7)
-_EPOCHS: int = 20
+_EPOCHS: int = 10
 
 
 def _gzip_reader_fn(filenames: List[Text]) -> tf.data.TFRecordDataset:
